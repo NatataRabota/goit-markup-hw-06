@@ -244,7 +244,7 @@
                         <div class="team-content">
                             <h3 class="team-name">Михаил Ермаков</h3>
                             <p class="team-name-desc">UI Designer</p>
-                            <ul class="social-list list">
+                            <ul class="social-list">
                                 <li class="social-list_item">
                                     <a class="social-list_link" href="">
                                         <svg class="social-list_icon">
@@ -351,7 +351,7 @@
             </div>
             <div class="footer-link">
                 <p class="footer-link-slogan">ПРИСОЕДИНЯЙТЕСЬ</p>
-                <ul class="social-list list">
+                <ul class="social-list">
                     <li class="social-list_item">
                         <a class="social-footer_link" href="">
                             <svg class="social-list_icon">
@@ -382,11 +382,13 @@
                     </li>
                 </ul>
             </div>
+            
             <div class="footer-form">
                 <form action="#" class="social-form">
-                    <p class="footer-link-slogan">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+                    <p class="footer-subscrib">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
                     <input type="text" class="social-form-item-text" placeholder="E-mail">
                     </input>
+                
                     <button type="submit" class="social-form-btn">Подписаться
                         <svg class="icon-send" width="24" height="24">
                         <use href="./images/sprite.svg#icon-send"></use>
@@ -404,8 +406,9 @@
                     <use href="./images/sprite.svg#icon-modal-btn"></use>
                 </svg>
             </button>
+
+            <p class="modal-form-item">Оставьте свои данные, мы вам перезвоним</p>
             <form action="#" class="modal_form">
-                <p class="modal-form-item">Оставьте свои данные, мы вам перезвоним</p>
                 <label for="" class="modal_form-field">
                     Имя
                     <span class="modal_form-input-wrapper">
@@ -440,10 +443,13 @@
                     Комментарий
                     <textarea class="modal_form-message" name="user_message" placeholder="Введите текст"></textarea>
                 </label>
-                <input id="user-policy" type="checkbox" name="user_policy" value="accept-policy" class="modal_form-policy visually-hidden">
-                <label for="user-policy" class="modal_form-policy-text">Соглашаюсь с рассылкой и принимаю 
-                    <a class="modal_form-policy-link" href="#"> Условия договора</a> 
+
+                <label class="modal_form-policy-text">Соглашаюсь с рассылкой и принимаю 
+                    <input class="checkbox" type="checkbox" name="user_policy" value="accept-policy">
+                    <span class="checkbox-icon"></span>
+                    <a class="modal_form-policy-link" href="#"> Условия договора</a>
                 </label>
+
                 <button type="submit" class="modal_form-btn">Отправить</button>
             </form>
         </div>
