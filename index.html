@@ -386,14 +386,14 @@
             <div class="footer-form">
                 <form action="#" class="social-form">
                     <p class="footer-subscrib">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-                    <input type="text" class="social-form-item-text" placeholder="E-mail">
-                    </input>
-                
-                    <button type="submit" class="social-form-btn">Подписаться
-                        <svg class="icon-send" width="24" height="24">
-                        <use href="./images/sprite.svg#icon-send"></use>
-                        </svg>
-                    </button>
+                    <label for="" class="subscrib-label">
+                        <input type="email" class="social-form-item-text" name="mail" placeholder="E-mail">
+                            <button type="submit" class="social-form-btn">Подписаться
+                                <svg class="icon-send" width="24" height="24">
+                                    <use href="./images/sprite.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                    </label>
                 </form>
             </div>
         </div>
@@ -444,10 +444,13 @@
                     <textarea class="modal_form-message" name="user_message" placeholder="Введите текст"></textarea>
                 </label>
 
-                <label class="modal_form-policy-text">Соглашаюсь с рассылкой и принимаю 
+                
+                <label for="" class="modal_form-policy-text">
                     <input class="checkbox" type="checkbox" name="user_policy" value="accept-policy">
-                    <span class="checkbox-icon"></span>
-                    <a class="modal_form-policy-link" href="#"> Условия договора</a>
+                    <span class="checkbox-icon">Соглашаюсь с рассылкой и принимаю
+                        <a class="modal_form-policy-link" href="#"> Условия договора</a>
+                    </span> 
+                    
                 </label>
 
                 <button type="submit" class="modal_form-btn">Отправить</button>
