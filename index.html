@@ -443,18 +443,19 @@
                     Комментарий
                     <textarea class="modal_form-message" name="user_message" placeholder="Введите текст"></textarea>
                 </label>
-
-                
-                <label for="" class="modal_form-policy-text">
-                    <input class="checkbox" type="checkbox" name="user_policy" value="accept-policy">
-                    <span class="checkbox-icon">Соглашаюсь с рассылкой и принимаю
+            
+                <label class="modal-form-label" for="check">    
+                <input type="checkbox" class="checkbox" name="user_policy" value="accept-policy" id="check">
+                    <svg class="modal_form-checkbox" width="15" height="15">
+                        <use href="./images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="checkbox-icon">Соглашаюсь с рассылкой и принимаю 
                         <a class="modal_form-policy-link" href="#"> Условия договора</a>
-                    </span> 
-                    
+                    </span>
                 </label>
 
                 <button type="submit" class="modal_form-btn">Отправить</button>
-            </form>
+            </form>    
         </div>
     </div>
 
