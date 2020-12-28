@@ -189,6 +189,7 @@ img {
     padding: 0px 15px;
     margin: auto;
 }
+
 /* ------ END HEADER ------ */
 
 /* ------ HERO ------ */
@@ -504,6 +505,14 @@ footer {
     align-items: baseline;
 }
 
+.footer-logo {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
 .footer-link {
     width: 206px;
     margin-right: 95px;
@@ -575,10 +584,10 @@ footer {
 }
 
 .footer-form { 
-    display: inline-flex;
+    display: block;
 }
 .footer-subscrib {
-    display: inline-flex;
+    display: flex;
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 14px;
@@ -590,15 +599,12 @@ footer {
     margin-bottom: 20px;
 }
 .social-form {
+    display: flex;
     width: 570px;
     height: 86px;
 }
 
-.subscrib-label {
-    display: flex;
-}
 .social-form-item-text {
-    display: block;
     width: 358px;
     height: 50px;
     padding: 15px;
@@ -617,8 +623,8 @@ footer {
 
 .social-form-btn {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 10px 28px;
     width: 200px;
     height: 50px;
@@ -791,6 +797,7 @@ footer {
 }
 
 .modal {
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -853,6 +860,13 @@ footer {
 
 .modal_form-field {
     margin-bottom: 10px;
+
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+
+    color: #757575;
 }
 
 .modal_form-input-wrapper {
@@ -882,18 +896,21 @@ footer {
 }
 
 .modal_form-message {
+    display: block;
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
 
     width: 100%;
-    height: 108px;
+    height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 16px;
     margin-top: 4px;
+    margin-bottom: 10px;
     resize: none;
     transition: border-color 250ms linear;
 }
@@ -927,10 +944,9 @@ footer {
 }
 .modal-form-label {
     position: relative;
-    display: flex;
-    align-items: center;
+    display: inline-block;
+    text-align: center;
     
-    margin-top: 10px;
     margin-bottom: 30px;
 }
 
@@ -939,12 +955,14 @@ footer {
     height: 15px;
 
     position: absolute;
-    border: 2px solid #212121;
-    border-radius: 4px;
+    border: 1px solid #212121;
+    border-radius: 2px;
     fill: #fff;
+    transform: translateY(30%);
 }
 
 .checkbox-icon {
+    display: inline-block;
     margin-left: 20px;
     cursor: pointer;
 
@@ -962,6 +980,7 @@ footer {
     background-color: var(--accent-color);
     background-size: contain;
     background-origin: border-box;
+    border: none;
 }
 
 .modal_form-policy-link {
@@ -971,6 +990,13 @@ footer {
 }
 
 .modal_form-btn {
+    display: block;
+    text-align: center;
+    align-items: center;
+    border: transparent;
+    cursor: pointer;
+    padding: 10px 55px;
+
     font-family: var(--main-font);
     width: 200px;
     height: 50px;
@@ -978,12 +1004,7 @@ footer {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
-    display: block;
-    text-align: center;
-    align-items: center;
-    border: transparent;
-    cursor: pointer;
-    padding: 10px 55px;
+    
     color: #FFFFFF;
     background-color: var(--accent-color);
     margin: 0 auto;
