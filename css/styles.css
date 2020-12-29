@@ -875,6 +875,16 @@ footer {
     margin-top: 4px;
 }
 
+.modal_form-field-text {
+    margin-bottom: 20px;
+
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+
+    color: #757575;
+}
 .modal_form-input:hover,
 .modal_form-input:focus {
     outline: none;
@@ -910,7 +920,6 @@ footer {
     border-radius: 4px;
     padding: 12px 16px;
     margin-top: 4px;
-    margin-bottom: 10px;
     resize: none;
     transition: border-color 250ms linear;
 }
@@ -947,7 +956,7 @@ footer {
     display: inline-block;
     text-align: center;
     
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .modal_form-checkbox {
